@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eee3e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #a6f5c1; /* Color de fondo de ejemplo */
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px; /* para manejar los bordes del contenedor */
+    box-shadow: 0 8px 15px rgba(195, 6, 6, 0.1); /* Sombra más profunda */
+    transition: transform 0.3s; /* para darle una animación */
+}
+
+.container:hover {
+    transform: translateY(-10px); /* animación al pasar el raton */
+}
+
+input[type="number"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd; /* Añadir borde para claridad */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #5e5c5c; /* Cambio de color al enfocar */
+    outline: none; /* Eliminar borde de enfoque */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #008c76; /* Color de fondo del botón */
+    color: rgb(248, 239, 239); /* Color del texto */
+    border: none; /* Eliminar borde predeterminado */
+    border-radius: 5px; /* Borde redondeado */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+button:hover {
+    background-color: #006f5c; /* Color del botón al pasar el ratón */
+    transform: translateY(-3px); /* Efecto de elevación */
+}
+
+button:active {
+    transform: translateY(1px); /* Efecto de presión */
+}
+
+button:disabled {
+    background-color: #efeff4;
+    cursor: not-allowed;
+}
+
+#feedback {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff; /* Color de texto predeterminado */
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+#feedback.success {
+    background-color: #28a745; /* Color de fondo para éxito */
+}
+
+#feedback.error {
+    background-color: #dc3545; /* Color de fondo para error */
+}
+
+#feedback.hint {
+    background-color: #ffc107; /* Color de fondo para pistas */
+    color: #000; /* Color de texto para pistas */
+}
+
+.attempt {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.attempt:hover {
+    background-color: #bbb; /* Color de fondo al pasar el ratón */
+}
+
+#progressBar {
+    width: 100%;
+    height: 8px;
+    background-color: #ddd; /* Color de fondo del contenedor de la barra */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+#progressBar > div {
+    height: 100%;
+    background-color: #28a745; /* Color de la barra de progreso */
+    transition: width 0.3s ease; /* Transición suave para el ancho */
+}

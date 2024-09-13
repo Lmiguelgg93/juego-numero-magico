@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del Número Mágico</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <audio id="backgroundMusic" src="audio/super-mario-64-alarm-clock-110801.mp3" loop></audio>
+    <div class="container">
+        <h1>Juego del Número Mágico</h1>
+        <p>Adivina el número entre 1 y 100.</p>
+        <input type="number" id="guessInput" placeholder="Introduce un numero" min="1" max="100">
+        <button id="submitGuess">Enviar</button>
+        <p id="feedback"></p>
+        <p>Intentos previos: <span id="attempts"></span></p>
+        <button id="playAgain" style="display: none;">Jugar de nuevo</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
